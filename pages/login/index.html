@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../../assets/css/formSign.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='../../assets/library/boxicons-2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Iniciar sesión o registrarse</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="../../assets/img/img-login.svg" alt="">
+            </div>
+
+            <div class="login__forms">
+                <form action="" class="login__registre" id="login-in">
+                    <h1 class="login__title">Iniciar sesión</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Nombre de usuario" class="login__input" id="username" required>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Contraseña" class="login__input" id="password" required>
+                    </div>
+
+                    <div class="login_box">
+                        <label id="messageErrorIn"></label>
+                    </div>
+
+                    <a href="#" class="login__forgot">Olvidaste tu contraseña?</a>
+
+                    <a type="button" id="SingIn" class="login__button">Iniciar sesión</a>
+
+                    <div>
+                        <span class="login__account">Aun no tienes cuenta?</span>
+                        <span class="login__signin" id="sign-up">Registrarse</span>
+                    </div>
+                </form>
+
+                <form action="" class="login__create none" id="login-up">
+                    <h1 class="login__title">Crear cuenta</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Nombre de usuario" id="up-username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" id="up-email" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Contraseña" id="up-password" class="login__input">
+                    </div>
+                    
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Contraseña" id="up-password-conf" class="login__input">
+                    </div>
+
+                    <div class="login_box">
+                        <span id="messageErrorUp"></span>
+                    </div>
+
+                    <a id="singUp" href="#" class="login__button">Registrarse</a>
+
+                    <div>
+                        <span class="login__account">Ya tienes una cuenta?</span>
+                        <span class="login__signup" id="sign-in">Iniciar sesión</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--===== MAIN JS =====-->
+    <script src="../../assets/js/sign.js"></script>
+    <script src="../../assets/js/sign-current-form.js"></script>
+</body>
+
+</html>

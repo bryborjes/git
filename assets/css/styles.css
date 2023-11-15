@@ -1,0 +1,6 @@
+@import 'font-colors.css';
+@import '../library/bootstrap-5.3.2-dist/css/bootstrap.min.css';
+
+* {
+    margin: 0;
+}
